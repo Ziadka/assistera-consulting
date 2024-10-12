@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Mail, Calendar, FileText, Users, MessageCircle, Send, BarChart, PieChart } from "lucide-react"
+import { Mail, Users, Send, PieChart } from "lucide-react"
 
 export default function ServicesPage() {
   const services = [

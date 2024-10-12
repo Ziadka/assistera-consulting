@@ -36,7 +36,7 @@ export default function HomePage() {
               Assistance administrative et gestion virtuelle pour petites entreprises
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
-              Chez Assitera Consulting, nous offrons des services d'assistance administrative et de gestion virtuelle pour aider les petites entreprises à rationaliser leurs processus grâce à des solutions digitales sur mesure.
+              Chez Assitera Consulting, nous offrons des services d&apos;assistance administrative et de gestion virtuelle pour aider les petites entreprises à rationaliser leurs processus grâce à des solutions digitales sur mesure.
             </p>
           </div>
         </main>
