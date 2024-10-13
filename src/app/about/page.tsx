@@ -7,13 +7,13 @@ export default function AboutPage() {
     <div className="min-h-screen bg-gradient-to-b from-red-100 to-white py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-extrabold text-center text-gray-900 sm:text-5xl mb-12">
-          À propos d&apos;AssiteraConsulting
+          À propos d&apos;Assitera Consulting
         </h1>
 
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
           <div>
             <p className="text-xl text-gray-700 mb-6">
-              AssiteraConsulting est née de la volonté d&apos;aider les petites entreprises à se libérer des tâches administratives chronophages. Notre mission est d&apos;offrir des solutions d&apos;assistance virtuelle sur mesure et d&apos;accompagner nos clients dans leur transformation digitale.
+              Assitera Consulting est née de la volonté d&apos;aider les petites entreprises à se libérer des tâches administratives chronophages. Notre mission est d&apos;offrir des solutions d&apos;assistance virtuelle sur mesure et d&apos;accompagner nos clients dans leur transformation digitale.
             </p>
             <p className="text-xl text-gray-700">
               Nous comprenons les défis auxquels font face les entrepreneurs et les petites entreprises. C&apos;est pourquoi nous nous engageons à simplifier leur quotidien en leur permettant de se concentrer sur ce qui compte vraiment : le développement de leur activité.
@@ -43,7 +43,7 @@ export default function AboutPage() {
             </CardHeader>
             <CardContent>
               <p className="text-lg text-gray-700">
-                Chez AssiteraConsulting, notre objectif principal est de simplifier et d'optimiser la gestion administrative de nos clients. Nous mettons à leur disposition notre expertise et des outils digitaux performants pour les aider à gagner en efficacité et en productivité.
+                Chez Assitera Consulting, notre objectif principal est de simplifier et d'optimiser la gestion administrative de nos clients. Nous mettons à leur disposition notre expertise et des outils digitaux performants pour les aider à gagner en efficacité et en productivité.
               </p>
             </CardContent>
           </Card>
