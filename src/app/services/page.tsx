@@ -65,7 +65,7 @@ export default function ServicesPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-100 to-white py-12">
+    <div className="min-h-screen bg-gradient-to-b from-red-100 to-white py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-extrabold text-center text-gray-900 sm:text-5xl mb-12">
           Nos Services

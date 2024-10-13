@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, Facebook, Linkedin, Instagram } from "lucide-react
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-100 to-white py-12">
+    <div className="min-h-screen bg-gradient-to-b from-red-100 to-white py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-extrabold text-center text-gray-900 sm:text-5xl mb-12">
           Contactez-nous
@@ -17,17 +17,17 @@ export default function ContactPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-blue-600" />
-                <a href="mailto:contact@assisteraconsulting.com" className="text-blue-600 hover:underline">
+                <Mail className="h-5 w-5 text-red-600" />
+                <a href="mailto:contact@assisteraconsulting.com" className="text-red-600 hover:underline">
                   contact@assisteraconsulting.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-blue-600" />
+                <Phone className="h-5 w-5 text-red-600" />
                 <span>Appelez-nous pour un service personnalisé</span>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin className="h-5 w-5 text-blue-600" />
+                <MapPin className="h-5 w-5 text-red-600" />
                 <span>Service d'assistance virtuelle - Disponible en ligne</span>
               </div>
             </CardContent>
