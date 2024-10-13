@@ -1,12 +1,16 @@
 import { MainNav } from "@/components/main-nav"
 import "./globals.css"
 import { Inter } from "next/font/google"
+import { Metadata } from 'next'
 
 const inter = Inter({ subsets: ["latin"] })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "AssiteraConsulting",
   description: "Solutions d'assistance virtuelle pour petites entreprises",
+  icons: {
+    icon: '/logo.ico',
+  },
 }
 
 export default function RootLayout({

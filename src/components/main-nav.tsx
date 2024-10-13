@@ -31,7 +31,7 @@ export function MainNav() {
           width={40}
           height={40}
         />
-        <span className="text-xs font-semibold mt-1 text-white">Assitera Consulting</span>
+        <span className="text-xs font-semibold mt-1 text-white">AssiteraConsulting</span>
       </Link>
 
       <nav className="hidden md:flex items-center space-x-4 lg:space-x-6">
@@ -52,7 +52,7 @@ export function MainNav() {
       </nav>
 
       <div className="hidden md:block">
-        <Button asChild className="btn-primary">
+        <Button asChild className="btn-red">
           <Link href="/contact">Contactez-nous</Link>
         </Button>
       </div>
@@ -81,7 +81,7 @@ export function MainNav() {
                 {label}
               </Link>
             ))}
-            <Button asChild className="btn-primary mt-4">
+            <Button  variant="red" asChild className="mt-4">
               <Link href="/contact" onClick={() => setIsOpen(false)}>Contactez-nous</Link>
             </Button>
           </nav>

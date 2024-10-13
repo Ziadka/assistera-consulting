@@ -18,7 +18,7 @@ export default function HomePage() {
               </Button>
             </div>
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <Button variant="outline" className="w-full bg-transparent text-white border-white hover:bg-white hover:text-black">
+              <Button variant="red" className="w-full text-white border-white hover:bg-white hover:text-black">
                 Obtenez une consultation gratuite
               </Button>
             </div>

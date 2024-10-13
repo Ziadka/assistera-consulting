@@ -64,7 +64,7 @@ export default function ContactPage() {
 
         <div className="mt-12 text-center">
           <h2 className="text-2xl font-bold mb-4 text-white">Prêt à simplifier la gestion de votre entreprise ?</h2>
-          <Button size="lg" asChild className="btn-primary">
+          <Button variant="red" size="lg" asChild className="btn-primary">
             <a href="mailto:contact@assisteraconsulting.com">Contactez-nous dès maintenant</a>
           </Button>
         </div>
