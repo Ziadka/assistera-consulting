@@ -31,7 +31,7 @@ export function MainNav() {
           width={40}
           height={40}
         />
-        <span className="text-xs font-semibold mt-0">AssiteraConsulting</span>
+        <span className="text-xs font-semibold mt-0">Assitera Consulting</span>
       </Link>
 
       <nav className="hidden md:flex items-center space-x-4 lg:space-x-">
