@@ -13,14 +13,18 @@ export default function HomePage() {
           </p>
           <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
             <div className="rounded-md shadow">
+              <a href="/contact">
               <Button className="btn-primary w-full">
                 Contactez-nous dès maintenant
               </Button>
+              </a>
             </div>
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <Button variant="red" className="w-full text-white border-white hover:bg-white hover:text-black">
+              <a href="/contact">
+                <Button variant="red" className="w-full text-white border-white hover:bg-white hover:text-black">
                 Obtenez une consultation gratuite
               </Button>
+              </a>
             </div>
           </div>
         </header>
