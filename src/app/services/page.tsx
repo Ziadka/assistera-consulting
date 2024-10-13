@@ -1,12 +1,12 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Mail, Users, Send, PieChart } from "lucide-react"
+import { Mail, Calendar, FileText, Users, MessageCircle, Send, BarChart, PieChart } from "lucide-react"
 
 export default function ServicesPage() {
   const services = [
     {
       title: "Gestion administrative",
       description: "Optimisez votre temps et votre efficacité",
-      icon: <Mail className="h-6 w-6" />,
+      icon: <Mail className="h-6 w-6 text-white" />,
       tasks: [
         "Traitement des emails",
         "Organisation d'agendas",
@@ -17,7 +17,7 @@ export default function ServicesPage() {
     {
       title: "Support client",
       description: "Améliorez la satisfaction de vos clients",
-      icon: <Users className="h-6 w-6" />,
+      icon: <Users className="h-6 w-6 text-white" />,
       tasks: [
         "Réponses aux demandes",
         "Gestion des réseaux sociaux"
@@ -26,7 +26,7 @@ export default function ServicesPage() {
     {
       title: "Marketing digital",
       description: "Boostez votre présence en ligne",
-      icon: <Send className="h-6 w-6" />,
+      icon: <Send className="h-6 w-6 text-white" />,
       tasks: [
         "Création de newsletters",
         "Suivi de campagnes",
@@ -36,7 +36,7 @@ export default function ServicesPage() {
     {
       title: "Assistance comptable",
       description: "Simplifiez votre gestion financière",
-      icon: <PieChart className="h-6 w-6" />,
+      icon: <PieChart className="h-6 w-6 text-white" />,
       tasks: [
         "Préparation de documents financiers",
         "Suivi des comptes",
@@ -65,24 +65,24 @@ export default function ServicesPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-red-100 to-white py-12">
+    <div className="min-h-screen py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-extrabold text-center text-gray-900 sm:text-5xl mb-12">
+        <h1 className="text-4xl font-extrabold text-center text-white sm:text-5xl mb-12">
           Nos Services
         </h1>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {services.map((service, index) => (
-            <Card key={index}>
+            <Card key={index} className="bg-gray-900 border-gray-800">
               <CardHeader>
-                <CardTitle className="flex items-center">
+                <CardTitle className="flex items-center text-white">
                   {service.icon}
                   <span className="ml-2">{service.title}</span>
                 </CardTitle>
-                <CardDescription>{service.description}</CardDescription>
+                <CardDescription className="text-gray-400">{service.description}</CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="list-disc list-inside">
+                <ul className="list-disc list-inside text-gray-400">
                   {service.tasks.map((task, taskIndex) => (
                     <li key={taskIndex}>{task}</li>
                   ))}
@@ -92,18 +92,18 @@ export default function ServicesPage() {
           ))}
         </div>
 
-        <h2 className="text-3xl font-bold text-center text-gray-900 mt-16 mb-8">
+        <h2 className="text-3xl font-bold text-center text-white mt-16 mb-8">
           Pourquoi choisir AssiteraConsulting ?
         </h2>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {reasons.map((reason, index) => (
-            <Card key={index}>
+            <Card key={index} className="bg-gray-900 border-gray-800">
               <CardHeader>
-                <CardTitle>{reason.title}</CardTitle>
+                <CardTitle className="text-white">{reason.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p>{reason.description}</p>
+                <p className="text-gray-400">{reason.description}</p>
               </CardContent>
             </Card>
           ))}

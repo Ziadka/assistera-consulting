@@ -31,19 +31,19 @@ export function MainNav() {
           width={40}
           height={40}
         />
-        <span className="text-xs font-semibold mt-0">Assitera Consulting</span>
+        <span className="text-xs font-semibold mt-1 text-white">Assitera Consulting</span>
       </Link>
 
-      <nav className="hidden md:flex items-center space-x-4 lg:space-x-">
+      <nav className="hidden md:flex items-center space-x-4 lg:space-x-6">
         {navItems.map(({ href, label }) => (
           <Link
             key={href}
             href={href}
             className={cn(
-              "text-sm font-medium transition-colors hover:text-primary",
+              "text-sm font-medium transition-colors hover:text-white",
               pathname === href
-                ? "text-primary"
-                : "text-muted-foreground"
+                ? "text-white"
+                : "text-gray-400"
             )}
           >
             {label}
@@ -52,7 +52,7 @@ export function MainNav() {
       </nav>
 
       <div className="hidden md:block">
-        <Button asChild>
+        <Button asChild className="btn-primary">
           <Link href="/contact">Contactez-nous</Link>
         </Button>
       </div>
@@ -64,24 +64,24 @@ export function MainNav() {
             <span className="sr-only">Toggle menu</span>
           </Button>
         </SheetTrigger>
-        <SheetContent side="right">
+        <SheetContent side="right" className="bg-black">
           <nav className="flex flex-col space-y-4 mt-4">
             {navItems.map(({ href, label }) => (
               <Link
                 key={href}
                 href={href}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary",
+                  "text-sm font-medium transition-colors hover:text-white",
                   pathname === href
-                    ? "text-primary"
-                    : "text-muted-foreground"
+                    ? "text-white"
+                    : "text-gray-400"
                 )}
                 onClick={() => setIsOpen(false)}
               >
                 {label}
               </Link>
             ))}
-            <Button asChild className="mt-4">
+            <Button asChild className="btn-primary mt-4">
               <Link href="/contact" onClick={() => setIsOpen(false)}>Contactez-nous</Link>
             </Button>
           </nav>
